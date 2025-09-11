@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Person Data Display</title>
+  <style>
+    :root{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;}
+    body{margin:24px;background:#f7f8fb;color:#1b1f23}
+    .card{max-width:700px;margin:0 auto;background:#fff;border-radius:12px;box-shadow:0 6px 20px rgba(20,30,50,.08);padding:20px;display:grid;grid-template-columns:110px 1fr;gap:18px;align-items:center}
+    .avatar{
+      width:110px;height:110px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:28px;background:linear-gradient(135deg,#7bdff6,#6aa8ff);color:#023047;
+    }
+    .info h2{margin:0 0 6px 0;font-size:20px}
+    .info .meta{margin:0 0 12px 0;color:#586169;font-size:14px}
+    table{width:100%;border-collapse:collapse}
+    td{padding:8px 6px;vertical-align:top}
+    td.label{width:120px;color:#6b7280;font-weight:600;font-size:13px}
+    .controls{display:flex;gap:8px;margin-top:12px}
+    button{padding:8px 12px;border-radius:8px;border:0;background:#0b69ff;color:#fff;cursor:pointer}
+    button.secondary{background:#e6edf8;color:#0b69ff}
+    form{display:grid;gap:8px;margin-top:12px}
+    input,textarea{padding:8px;border-radius:8px;border:1px solid #e6e9ef;font-size:14px}
+    textarea{resize:vertical}
+    @media (max-width:560px){.card{grid-template-columns:1fr; text-align:center}.info{text-align:center}.controls{
